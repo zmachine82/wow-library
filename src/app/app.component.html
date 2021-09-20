@@ -1,2 +1,6 @@
-<input type="text">
+<input type="text" [(ngModel)]="name" (input)="inputUpdated($event)">
 <p>{{name}}</p>
+
+<app-book-list></app-book-list>
+
+

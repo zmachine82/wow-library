@@ -1,0 +1,4 @@
+<button (click)="addABook()" *ngIf="books.length < 7">Add Book</button>
+
+
+<app-book *ngFor="let book of books"></app-book>

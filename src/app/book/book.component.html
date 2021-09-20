@@ -1,0 +1,6 @@
+<div>
+  <img src="assets/download.png" alt="">
+  <p *ngIf="isAvailable">{{name}}</p>
+  <p *ngIf="!isAvailable">{{name}} is not available</p>
+  <button (click)="buttonClicked($event)">Checkout</button>
+</div>

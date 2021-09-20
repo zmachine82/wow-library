@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'wow-library';
+
+  inputUpdated(event: any) {
+    console.log(event)
+  }
 }
