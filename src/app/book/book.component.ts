@@ -16,7 +16,7 @@ export class BookComponent implements OnInit {
   }
 
   buttonClicked(event: any) {
-    console.log(event)
+    this.isAvailable = !this.isAvailable
   }
 
 }

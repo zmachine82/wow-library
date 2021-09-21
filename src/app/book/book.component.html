@@ -1,6 +1,12 @@
-<div>
-  <img src="assets/download.png" alt="">
-  <p *ngIf="isAvailable">{{name}}</p>
-  <p *ngIf="!isAvailable">{{name}} is not available</p>
-  <button (click)="buttonClicked($event)">Checkout</button>
+<div class="spacer" style="width: 18rem; margin: 8px;">
+
+  <div class="card" style="width: 100%; ">
+    <img src="assets/download.png" alt="" class="card-img-top" width="18rem"/>
+    <div class="card-body">
+      <p class="card-title" *ngIf="isAvailable">{{ name }}</p>
+      <p class="card-title" *ngIf="!isAvailable">{{ name }} is not available</p>
+      <button [disabled]='!isAvailable' class="btn" [ngClass]="isAvailable ? 'btn-primary' : 'btn-danger'" (click)="buttonClicked($event)">Checkout</button>
+
+    </div>
+  </div>
 </div>

@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BookComponent } from './book/book.component';
 import { BookListComponent } from './book-list/book-list.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookComponent,
-    BookListComponent
+    BookListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
