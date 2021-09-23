@@ -7,16 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookComponent implements OnInit {
 
-  name: string = 'book name here'
-  isAvailable = true;
-
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  buttonClicked(event: any) {
-    this.isAvailable = !this.isAvailable
   }
 
 }
