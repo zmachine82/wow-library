@@ -1,0 +1,10 @@
+
+
+
+input output --- breaks the variable blackbox from the perspective of the child
+view encapsulation ---- breaks the component barrier for css
+view child --- access a child element in the typescript
+lifecycle --- this is angular inner workings, use ngOnInit only use others sparingly for specific purposes
+content projection  --- content is between the component opening and closing tag --used with ng-content to display different things in the component html
+
+1. the biggest thing about components is that they are big black boxes

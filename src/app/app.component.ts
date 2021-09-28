@@ -6,9 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = 'wow-library';
+  title = 'BookIt';
+  loadedFeature = 'bookshelf'
 
-  inputUpdated(event: any) {
-    console.log(event)
+  onNavigate(feature: string){
+    this.loadedFeature = feature;
   }
 }
